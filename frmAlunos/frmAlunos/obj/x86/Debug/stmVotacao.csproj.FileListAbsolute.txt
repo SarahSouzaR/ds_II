@@ -1,0 +1,23 @@
+F:\gitrepositorios\frmAlunos\frmAlunos\bin\Debug\frmAlunos.exe
+F:\gitrepositorios\frmAlunos\frmAlunos\bin\Debug\frmAlunos.pdb
+F:\gitrepositorios\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmCadCandidato.resources
+F:\gitrepositorios\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmCadEleitor.resources
+F:\gitrepositorios\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmCadAluno.resources
+F:\gitrepositorios\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmTelaPrincipal.resources
+F:\gitrepositorios\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.Properties.Resources.resources
+F:\gitrepositorios\frmAlunos\frmAlunos\obj\x86\Debug\stmVotacao.csproj.GenerateResource.Cache
+F:\gitrepositorios\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.exe
+F:\gitrepositorios\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.pdb
+F:\gitrepositorios\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.Votacao.resources
+F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.exe
+F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.pdb
+F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\bin\Debug\frmAlunos.exe
+F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\bin\Debug\frmAlunos.pdb
+F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmCadCandidato.resources
+F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmCadEleitor.resources
+F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmCadAluno.resources
+F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmLogin.resources
+F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmTelaPrincipal.resources
+F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.Properties.Resources.resources
+F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\stmVotacao.csproj.GenerateResource.Cache
+F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmVotacao.resources

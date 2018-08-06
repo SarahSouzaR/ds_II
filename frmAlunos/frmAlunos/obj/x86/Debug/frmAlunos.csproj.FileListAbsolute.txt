@@ -1,0 +1,9 @@
+C:\Users\palom\AppData\Local\Temporary Projects\frmAlunos\bin\Debug\frmAlunos.exe
+C:\Users\palom\AppData\Local\Temporary Projects\frmAlunos\bin\Debug\frmAlunos.pdb
+C:\Users\palom\AppData\Local\Temporary Projects\frmAlunos\obj\x86\Debug\frmAlunos.frmCadAluno.resources
+C:\Users\palom\AppData\Local\Temporary Projects\frmAlunos\obj\x86\Debug\frmAlunos.Properties.Resources.resources
+C:\Users\palom\AppData\Local\Temporary Projects\frmAlunos\obj\x86\Debug\frmAlunos.csproj.GenerateResource.Cache
+C:\Users\palom\AppData\Local\Temporary Projects\frmAlunos\obj\x86\Debug\frmAlunos.exe
+C:\Users\palom\AppData\Local\Temporary Projects\frmAlunos\obj\x86\Debug\frmAlunos.pdb
+F:\gitrepositorios\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.exe
+F:\gitrepositorios\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.pdb
