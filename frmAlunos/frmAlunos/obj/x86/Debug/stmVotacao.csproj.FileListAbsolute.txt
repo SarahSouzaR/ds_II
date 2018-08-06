@@ -21,3 +21,5 @@ F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.
 F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.Properties.Resources.resources
 F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\stmVotacao.csproj.GenerateResource.Cache
 F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmVotacao.resources
+F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\bin\Debug\BD_alunos.accdb
+F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\bin\Debug\frmAlunos.exe.config
