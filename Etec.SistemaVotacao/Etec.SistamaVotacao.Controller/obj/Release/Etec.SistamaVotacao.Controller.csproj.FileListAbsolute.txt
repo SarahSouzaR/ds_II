@@ -1,0 +1,4 @@
+C:\Users\Aluno\documents\visual studio 2010\Projects\Etec.SistemaVotacao\Etec.SistamaVotacao.Controller\bin\Release\Etec.SistamaVotacao.Controller.dll
+C:\Users\Aluno\documents\visual studio 2010\Projects\Etec.SistemaVotacao\Etec.SistamaVotacao.Controller\bin\Release\Etec.SistamaVotacao.Controller.pdb
+C:\Users\Aluno\documents\visual studio 2010\Projects\Etec.SistemaVotacao\Etec.SistamaVotacao.Controller\obj\Release\Etec.SistamaVotacao.Controller.dll
+C:\Users\Aluno\documents\visual studio 2010\Projects\Etec.SistemaVotacao\Etec.SistamaVotacao.Controller\obj\Release\Etec.SistamaVotacao.Controller.pdb

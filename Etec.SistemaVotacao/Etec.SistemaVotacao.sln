@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Etec.SistemaVotacao.Model", "Etec.SistemaVotacao.Model\Etec.SistemaVotacao.Model.csproj", "{A6AA99A8-51F5-4861-84F8-8D165980E3EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Etec.SistamaVotacao.Controller", "Etec.SistamaVotacao.Controller\Etec.SistamaVotacao.Controller.csproj", "{75F996E6-04BE-4D4E-AD7E-7749CFA265C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6AA99A8-51F5-4861-84F8-8D165980E3EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6AA99A8-51F5-4861-84F8-8D165980E3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6AA99A8-51F5-4861-84F8-8D165980E3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6AA99A8-51F5-4861-84F8-8D165980E3EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75F996E6-04BE-4D4E-AD7E-7749CFA265C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75F996E6-04BE-4D4E-AD7E-7749CFA265C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75F996E6-04BE-4D4E-AD7E-7749CFA265C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75F996E6-04BE-4D4E-AD7E-7749CFA265C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

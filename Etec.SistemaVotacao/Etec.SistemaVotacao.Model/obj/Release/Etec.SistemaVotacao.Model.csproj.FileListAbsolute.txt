@@ -1,0 +1,4 @@
+C:\Users\Aluno\documents\visual studio 2010\Projects\Etec.SistemaVotacao\Etec.SistemaVotacao.Model\bin\Release\Etec.SistemaVotacao.Model.dll
+C:\Users\Aluno\documents\visual studio 2010\Projects\Etec.SistemaVotacao\Etec.SistemaVotacao.Model\bin\Release\Etec.SistemaVotacao.Model.pdb
+C:\Users\Aluno\documents\visual studio 2010\Projects\Etec.SistemaVotacao\Etec.SistemaVotacao.Model\obj\Release\Etec.SistemaVotacao.Model.dll
+C:\Users\Aluno\documents\visual studio 2010\Projects\Etec.SistemaVotacao\Etec.SistemaVotacao.Model\obj\Release\Etec.SistemaVotacao.Model.pdb
