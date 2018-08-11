@@ -23,3 +23,17 @@ F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\stmVotacao
 F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmVotacao.resources
 F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\bin\Debug\BD_alunos.accdb
 F:\Etec II - 3 SEM\DS II\stmVotacao\frmAlunos\frmAlunos\bin\Debug\frmAlunos.exe.config
+G:\Etec II - 3 SEM\DS II\Sistema_Votacao\stmVotacao\frmAlunos\frmAlunos\bin\Debug\frmAlunos.exe.config
+G:\Etec II - 3 SEM\DS II\Sistema_Votacao\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.exe
+G:\Etec II - 3 SEM\DS II\Sistema_Votacao\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.pdb
+G:\Etec II - 3 SEM\DS II\Sistema_Votacao\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmCadCandidato.resources
+G:\Etec II - 3 SEM\DS II\Sistema_Votacao\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmCadEleitor.resources
+G:\Etec II - 3 SEM\DS II\Sistema_Votacao\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmCadAluno.resources
+G:\Etec II - 3 SEM\DS II\Sistema_Votacao\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmLogin.resources
+G:\Etec II - 3 SEM\DS II\Sistema_Votacao\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmTelaPrincipal.resources
+G:\Etec II - 3 SEM\DS II\Sistema_Votacao\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.Properties.Resources.resources
+G:\Etec II - 3 SEM\DS II\Sistema_Votacao\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\frmAlunos.frmVotacao.resources
+G:\Etec II - 3 SEM\DS II\Sistema_Votacao\stmVotacao\frmAlunos\frmAlunos\obj\x86\Debug\stmVotacao.csproj.GenerateResource.Cache
+G:\Etec II - 3 SEM\DS II\Sistema_Votacao\stmVotacao\frmAlunos\frmAlunos\bin\Debug\BD_alunos.accdb
+G:\Etec II - 3 SEM\DS II\Sistema_Votacao\stmVotacao\frmAlunos\frmAlunos\bin\Debug\frmAlunos.exe
+G:\Etec II - 3 SEM\DS II\Sistema_Votacao\stmVotacao\frmAlunos\frmAlunos\bin\Debug\frmAlunos.pdb

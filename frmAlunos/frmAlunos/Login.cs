@@ -15,5 +15,13 @@ namespace frmAlunos
         {
             InitializeComponent();
         }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            if (txtNome.Text == "" || txtSenha.Text== "") 
+            {
+                MessageBox.Show("Campo não pode estar vazio", "Etec da Zona Leste");
+            }
+        }
     }
 }
