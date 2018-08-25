@@ -2,3 +2,7 @@ C:\Users\Aluno\documents\visual studio 2010\Projects\EtecMetodoGenerics\Classes\
 C:\Users\Aluno\documents\visual studio 2010\Projects\EtecMetodoGenerics\Classes\bin\Debug\Classes.pdb
 C:\Users\Aluno\documents\visual studio 2010\Projects\EtecMetodoGenerics\Classes\obj\Debug\Classes.dll
 C:\Users\Aluno\documents\visual studio 2010\Projects\EtecMetodoGenerics\Classes\obj\Debug\Classes.pdb
+G:\gitrepositorios\EtecMetodoGenerics\Classes\bin\Debug\Classes.dll
+G:\gitrepositorios\EtecMetodoGenerics\Classes\bin\Debug\Classes.pdb
+G:\gitrepositorios\EtecMetodoGenerics\Classes\obj\Debug\Classes.dll
+G:\gitrepositorios\EtecMetodoGenerics\Classes\obj\Debug\Classes.pdb

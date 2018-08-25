@@ -15,10 +15,10 @@ namespace EtecMetodoGenerics
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            Application.Run(new Documentos());
-            Application.Run(new Pedidos());
-            Application.Run(new CadastrarCliente());
+            //Application.Run(new Form1());
+            //Application.Run(new Documentos());
+            //Application.Run(new Pedidos());
+            Application.Run(new Clientes());
         }
     }
 }

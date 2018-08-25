@@ -27,14 +27,6 @@ namespace EtecMetodoGenerics
 
             listaClientesCadastrados.Add(clienteCadastro);
 
-            dgvClienteCadastrado.DataSource = null;
-            dgvClienteCadastrado.DataSource = listaClientesCadastrados;
-
-        }
-
-        private void CadastrarCliente_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

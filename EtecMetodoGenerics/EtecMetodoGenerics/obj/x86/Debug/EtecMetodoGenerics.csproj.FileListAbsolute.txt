@@ -10,4 +10,18 @@ C:\Users\Aluno\documents\visual studio 2010\Projects\EtecMetodoGenerics\EtecMeto
 C:\Users\Aluno\documents\visual studio 2010\Projects\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.pdb
 C:\Users\Aluno\documents\visual studio 2010\Projects\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.Documentos.resources
 C:\Users\Aluno\documents\visual studio 2010\Projects\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.Pedidos.resources
-C:\Users\Aluno\documents\visual studio 2010\Projects\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.CadastrarCliente.resources
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\bin\Debug\EtecMetodoGenerics.exe
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\bin\Debug\EtecMetodoGenerics.pdb
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\bin\Debug\Classes.dll
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\bin\Debug\Classes.pdb
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.csprojResolveAssemblyReference.cache
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.CadastrarCliente.resources
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.Documentos.resources
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.Form1.resources
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.Pedidos.resources
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.Properties.Resources.resources
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.csproj.GenerateResource.Cache
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.exe
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.pdb
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.Produtos.resources
+G:\gitrepositorios\EtecMetodoGenerics\EtecMetodoGenerics\obj\x86\Debug\EtecMetodoGenerics.Clientes.resources

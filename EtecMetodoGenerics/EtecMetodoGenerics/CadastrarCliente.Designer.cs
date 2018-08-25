@@ -35,8 +35,6 @@
             this.txtDtNascimento = new System.Windows.Forms.TextBox();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.dgvClienteCadastrado = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClienteCadastrado)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodigoCliente
@@ -104,20 +102,11 @@
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // dgvClienteCadastrado
-            // 
-            this.dgvClienteCadastrado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClienteCadastrado.Location = new System.Drawing.Point(30, 217);
-            this.dgvClienteCadastrado.Name = "dgvClienteCadastrado";
-            this.dgvClienteCadastrado.Size = new System.Drawing.Size(337, 150);
-            this.dgvClienteCadastrado.TabIndex = 7;
-            // 
             // CadastrarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 417);
-            this.Controls.Add(this.dgvClienteCadastrado);
+            this.ClientSize = new System.Drawing.Size(284, 233);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.txtNomeCliente);
             this.Controls.Add(this.txtDtNascimento);
@@ -127,8 +116,6 @@
             this.Controls.Add(this.lblCodigoCliente);
             this.Name = "CadastrarCliente";
             this.Text = "CadastrarCliente";
-            this.Load += new System.EventHandler(this.CadastrarCliente_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClienteCadastrado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,6 +130,5 @@
         private System.Windows.Forms.TextBox txtDtNascimento;
         private System.Windows.Forms.TextBox txtNomeCliente;
         private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.DataGridView dgvClienteCadastrado;
     }
 }
