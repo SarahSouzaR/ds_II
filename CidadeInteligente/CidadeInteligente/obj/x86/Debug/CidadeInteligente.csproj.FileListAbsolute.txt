@@ -1,0 +1,11 @@
+C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\bin\Debug\CidadeInteligente.exe
+C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\bin\Debug\CidadeInteligente.pdb
+C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.frmPrincipal.resources
+C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.frmClientes.resources
+C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.frmDocumentos.resources
+C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.frmFuncionarios.resources
+C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.frmPessoa.resources
+C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.Properties.Resources.resources
+C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.csproj.GenerateResource.Cache
+C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.exe
+C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.pdb
