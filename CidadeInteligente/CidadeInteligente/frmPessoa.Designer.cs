@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblTitlePessoa = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblEndereco = new System.Windows.Forms.Label();
@@ -40,7 +41,11 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cidadeInteligenteDataSet = new CidadeInteligente.CidadeInteligenteDataSet();
+            this.cidadeInteligenteDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cidadeInteligenteDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cidadeInteligenteDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitlePessoa
@@ -154,11 +159,23 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.DataSource = this.cidadeInteligenteDataSetBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(18, 270);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(468, 150);
             this.dataGridView1.TabIndex = 11;
+            // 
+            // cidadeInteligenteDataSet
+            // 
+            this.cidadeInteligenteDataSet.DataSetName = "CidadeInteligenteDataSet";
+            this.cidadeInteligenteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cidadeInteligenteDataSetBindingSource
+            // 
+            this.cidadeInteligenteDataSetBindingSource.DataSource = this.cidadeInteligenteDataSet;
+            this.cidadeInteligenteDataSetBindingSource.Position = 0;
             // 
             // frmPessoa
             // 
@@ -181,6 +198,8 @@
             this.Text = "frmPessoa";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPessoa_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cidadeInteligenteDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cidadeInteligenteDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,5 +219,7 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource cidadeInteligenteDataSetBindingSource;
+        private CidadeInteligenteDataSet cidadeInteligenteDataSet;
     }
 }

@@ -9,3 +9,5 @@ C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeI
 C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.csproj.GenerateResource.Cache
 C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.exe
 C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.pdb
+C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\bin\Debug\CidadeInteligente.accdb
+C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\bin\Debug\CidadeInteligente.exe.config
