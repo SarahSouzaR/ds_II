@@ -1,0 +1,9 @@
+G:\Etec II - 3 SEM\DS II\ProjetoAula27082018\ProjetoAula27082018\bin\Debug\ProjetoAula27082018.exe
+G:\Etec II - 3 SEM\DS II\ProjetoAula27082018\ProjetoAula27082018\bin\Debug\ProjetoAula27082018.pdb
+G:\Etec II - 3 SEM\DS II\ProjetoAula27082018\ProjetoAula27082018\obj\x86\Debug\teste.Medico.resources
+G:\Etec II - 3 SEM\DS II\ProjetoAula27082018\ProjetoAula27082018\obj\x86\Debug\teste.Properties.Resources.resources
+G:\Etec II - 3 SEM\DS II\ProjetoAula27082018\ProjetoAula27082018\obj\x86\Debug\ProjetoAula27082018.csproj.GenerateResource.Cache
+G:\Etec II - 3 SEM\DS II\ProjetoAula27082018\ProjetoAula27082018\obj\x86\Debug\ProjetoAula27082018.exe
+G:\Etec II - 3 SEM\DS II\ProjetoAula27082018\ProjetoAula27082018\obj\x86\Debug\ProjetoAula27082018.pdb
+F:\Etec II - 3 SEM\DS II\ProjAula27082018\ProjetoAula27082018\ProjetoAula27082018\obj\x86\Debug\ProjetoAula27082018.exe
+F:\Etec II - 3 SEM\DS II\ProjAula27082018\ProjetoAula27082018\ProjetoAula27082018\obj\x86\Debug\ProjetoAula27082018.pdb
