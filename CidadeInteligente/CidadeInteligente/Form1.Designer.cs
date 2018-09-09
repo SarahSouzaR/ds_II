@@ -45,7 +45,7 @@
             this.cadastrosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(572, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1167, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -95,7 +95,7 @@
             this.lblWelcome.Font = new System.Drawing.Font("Courier New", 26.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)
                             | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblWelcome.Location = new System.Drawing.Point(181, 107);
+            this.lblWelcome.Location = new System.Drawing.Point(491, 183);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(206, 40);
             this.lblWelcome.TabIndex = 3;
@@ -106,7 +106,7 @@
             this.lblSubTitlePrin.AutoSize = true;
             this.lblSubTitlePrin.Font = new System.Drawing.Font("Courier New", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubTitlePrin.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblSubTitlePrin.Location = new System.Drawing.Point(91, 146);
+            this.lblSubTitlePrin.Location = new System.Drawing.Point(414, 223);
             this.lblSubTitlePrin.Name = "lblSubTitlePrin";
             this.lblSubTitlePrin.Size = new System.Drawing.Size(365, 30);
             this.lblSubTitlePrin.TabIndex = 5;
@@ -117,7 +117,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(572, 374);
+            this.ClientSize = new System.Drawing.Size(1167, 503);
             this.Controls.Add(this.lblSubTitlePrin);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.menuStrip1);

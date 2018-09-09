@@ -39,6 +39,10 @@
             this.lblCargo = new System.Windows.Forms.Label();
             this.lblCodPessoaF = new System.Windows.Forms.Label();
             this.lblTitleFunc = new System.Windows.Forms.Label();
+            this.dgvFuncionarios = new System.Windows.Forms.DataGridView();
+            this.lblCodFunc = new System.Windows.Forms.Label();
+            this.txtCodFunc = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLimpar
@@ -46,10 +50,10 @@
             this.btnLimpar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnLimpar.Location = new System.Drawing.Point(335, 163);
+            this.btnLimpar.Location = new System.Drawing.Point(524, 171);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(82, 35);
-            this.btnLimpar.TabIndex = 21;
+            this.btnLimpar.TabIndex = 7;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
@@ -59,10 +63,10 @@
             this.btnSalvar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnSalvar.Location = new System.Drawing.Point(236, 163);
+            this.btnSalvar.Location = new System.Drawing.Point(435, 171);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(82, 35);
-            this.btnSalvar.TabIndex = 20;
+            this.btnSalvar.TabIndex = 6;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -70,10 +74,10 @@
             // txtRamal
             // 
             this.txtRamal.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRamal.Location = new System.Drawing.Point(125, 106);
+            this.txtRamal.Location = new System.Drawing.Point(140, 150);
             this.txtRamal.Name = "txtRamal";
             this.txtRamal.Size = new System.Drawing.Size(134, 20);
-            this.txtRamal.TabIndex = 19;
+            this.txtRamal.TabIndex = 5;
             // 
             // txtSalario
             // 
@@ -81,7 +85,7 @@
             this.txtSalario.Location = new System.Drawing.Point(435, 106);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(171, 20);
-            this.txtSalario.TabIndex = 18;
+            this.txtSalario.TabIndex = 4;
             // 
             // txtCargo
             // 
@@ -89,21 +93,21 @@
             this.txtCargo.Location = new System.Drawing.Point(398, 64);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(208, 20);
-            this.txtCargo.TabIndex = 17;
+            this.txtCargo.TabIndex = 3;
             // 
             // txtCodPessoaF
             // 
             this.txtCodPessoaF.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodPessoaF.Location = new System.Drawing.Point(168, 64);
+            this.txtCodPessoaF.Location = new System.Drawing.Point(183, 108);
             this.txtCodPessoaF.Name = "txtCodPessoaF";
             this.txtCodPessoaF.Size = new System.Drawing.Size(91, 20);
-            this.txtCodPessoaF.TabIndex = 16;
+            this.txtCodPessoaF.TabIndex = 2;
             // 
             // lblRamal
             // 
             this.lblRamal.AutoSize = true;
             this.lblRamal.Font = new System.Drawing.Font("Courier New", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRamal.Location = new System.Drawing.Point(22, 110);
+            this.lblRamal.Location = new System.Drawing.Point(22, 150);
             this.lblRamal.Name = "lblRamal";
             this.lblRamal.Size = new System.Drawing.Size(64, 16);
             this.lblRamal.TabIndex = 15;
@@ -113,7 +117,7 @@
             // 
             this.lblSalario.AutoSize = true;
             this.lblSalario.Font = new System.Drawing.Font("Courier New", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(319, 110);
+            this.lblSalario.Location = new System.Drawing.Point(319, 108);
             this.lblSalario.Name = "lblSalario";
             this.lblSalario.Size = new System.Drawing.Size(80, 16);
             this.lblSalario.TabIndex = 14;
@@ -133,7 +137,7 @@
             // 
             this.lblCodPessoaF.AutoSize = true;
             this.lblCodPessoaF.Font = new System.Drawing.Font("Courier New", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodPessoaF.Location = new System.Drawing.Point(22, 66);
+            this.lblCodPessoaF.Location = new System.Drawing.Point(22, 108);
             this.lblCodPessoaF.Name = "lblCodPessoaF";
             this.lblCodPessoaF.Size = new System.Drawing.Size(128, 16);
             this.lblCodPessoaF.TabIndex = 12;
@@ -150,11 +154,40 @@
             this.lblTitleFunc.TabIndex = 11;
             this.lblTitleFunc.Text = "CADASTRO DOS FUNCIONÁRIOS";
             // 
+            // dgvFuncionarios
+            // 
+            this.dgvFuncionarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFuncionarios.Location = new System.Drawing.Point(25, 234);
+            this.dgvFuncionarios.Name = "dgvFuncionarios";
+            this.dgvFuncionarios.Size = new System.Drawing.Size(581, 150);
+            this.dgvFuncionarios.TabIndex = 22;
+            // 
+            // lblCodFunc
+            // 
+            this.lblCodFunc.AutoSize = true;
+            this.lblCodFunc.Font = new System.Drawing.Font("Courier New", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodFunc.Location = new System.Drawing.Point(22, 66);
+            this.lblCodFunc.Name = "lblCodFunc";
+            this.lblCodFunc.Size = new System.Drawing.Size(168, 16);
+            this.lblCodFunc.TabIndex = 23;
+            this.lblCodFunc.Text = "Código Funcionário: ";
+            // 
+            // txtCodFunc
+            // 
+            this.txtCodFunc.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodFunc.Location = new System.Drawing.Point(183, 64);
+            this.txtCodFunc.Name = "txtCodFunc";
+            this.txtCodFunc.Size = new System.Drawing.Size(91, 20);
+            this.txtCodFunc.TabIndex = 1;
+            // 
             // frmFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 233);
+            this.ClientSize = new System.Drawing.Size(634, 404);
+            this.Controls.Add(this.txtCodFunc);
+            this.Controls.Add(this.lblCodFunc);
+            this.Controls.Add(this.dgvFuncionarios);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtRamal);
@@ -168,6 +201,8 @@
             this.Controls.Add(this.lblTitleFunc);
             this.Name = "frmFuncionarios";
             this.Text = "frmFuncionarios";
+            this.Load += new System.EventHandler(this.frmFuncionarios_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,5 +221,8 @@
         private System.Windows.Forms.Label lblCargo;
         private System.Windows.Forms.Label lblCodPessoaF;
         private System.Windows.Forms.Label lblTitleFunc;
+        private System.Windows.Forms.DataGridView dgvFuncionarios;
+        private System.Windows.Forms.Label lblCodFunc;
+        private System.Windows.Forms.TextBox txtCodFunc;
     }
 }

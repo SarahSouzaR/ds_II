@@ -11,3 +11,19 @@ C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeI
 C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.pdb
 C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\bin\Debug\CidadeInteligente.accdb
 C:\Users\Sarah\Desktop\CidadeInteligente\CidadeInteligente\bin\Debug\CidadeInteligente.exe.config
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\bin\Debug\CidadeInteligente.exe.config
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.exe
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.pdb
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\bin\Debug\CidadeInteligente.accdb
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\bin\Debug\CidadeInteligente.exe
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\bin\Debug\CidadeInteligente.pdb
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\bin\Debug\Classes.dll
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\bin\Debug\Classes.pdb
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.csprojResolveAssemblyReference.cache
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.frmPrincipal.resources
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.frmClientes.resources
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.frmDocumentos.resources
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.frmFuncionarios.resources
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.frmPessoa.resources
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.Properties.Resources.resources
+F:\Etec II - 3 SEM\DS II\CidadeInteligente\CidadeInteligente\obj\x86\Debug\CidadeInteligente.csproj.GenerateResource.Cache
