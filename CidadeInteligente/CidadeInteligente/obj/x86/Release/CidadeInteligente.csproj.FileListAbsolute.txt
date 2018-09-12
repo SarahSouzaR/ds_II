@@ -1,0 +1,17 @@
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\bin\Release\CidadeInteligente.accdb
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\bin\Release\CidadeInteligente.exe.config
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\bin\Release\CidadeInteligente.exe
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\bin\Release\CidadeInteligente.pdb
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\bin\Release\Classes.dll
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\bin\Release\Classes.pdb
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\obj\x86\Release\CidadeInteligente.csprojResolveAssemblyReference.cache
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\obj\x86\Release\CidadeInteligente.frmPrincipal.resources
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\obj\x86\Release\CidadeInteligente.frmClientes.resources
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\obj\x86\Release\CidadeInteligente.frmDocumentos.resources
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\obj\x86\Release\CidadeInteligente.frmFuncionarios.resources
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\obj\x86\Release\CidadeInteligente.frmPesquisar.resources
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\obj\x86\Release\CidadeInteligente.frmPessoa.resources
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\obj\x86\Release\CidadeInteligente.Properties.Resources.resources
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\obj\x86\Release\CidadeInteligente.csproj.GenerateResource.Cache
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\obj\x86\Release\CidadeInteligente.exe
+G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\CidadeInteligente\obj\x86\Release\CidadeInteligente.pdb

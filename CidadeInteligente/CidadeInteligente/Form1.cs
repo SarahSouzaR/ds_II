@@ -44,6 +44,10 @@ namespace CidadeInteligente
             cliente.Show();
         }
 
-       
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+             
     }
 }

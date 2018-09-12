@@ -20,13 +20,12 @@ namespace CidadeInteligente
 
         private void frmFuncionarios_Load(object sender, EventArgs e)
         {
-            CadastrarFuncionario();
-            CarregarGrid();
+            retornarFuncionario();
         }
 
         private void LimparCampos()
         {
-            txtCodFunc.Text = "";
+            //txtCodFunc.Text = "";
             txtCodPessoaF.Text = "";
             txtCargo.Text = "";
             txtSalario.Text = "";
@@ -38,10 +37,20 @@ namespace CidadeInteligente
             LimparCampos();
         }
 
-        List<Funcionario> lista_Funcionarios = new List<Funcionario>();
+        //List<Funcionario> lista_Funcionarios = new List<Funcionario>();
 
-        private void CadastrarFuncionario()
+        private void CadastrarFuncionario(int cd_Pessoa, string ds_Cargo, string nr_Salario, string nr_Ramal)
         {
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03";
+            conexao.Open();
+            string insertFuncionarios = string.Concat("insert into tb_funcionario (cd_Pessoa, ds_Cargo, nr_Salario, nr_Ramal) values ('", cd_Pessoa, "', '", ds_Cargo, "', '", nr_Salario, "', '", nr_Ramal, "') ");
+            SqlCommand comandoSql = new SqlCommand(insertFuncionarios, conexao);
+            comandoSql.ExecuteNonQuery();
+            conexao.Close();
+
+
+            /*
             Funcionario funcionario1 = new Funcionario();
             funcionario1.cd_Funcionario = txtCodFunc.Text;
             funcionario1.cd_Pessoa = txtCodPessoaF.Text;
@@ -50,39 +59,65 @@ namespace CidadeInteligente
             funcionario1.nr_Ramal = txtRamal.Text;
 
             lista_Funcionarios.Add(funcionario1);
+            */
         }
 
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            CadastrarFuncionario(Convert.ToInt32(txtCodPessoaF.Text), txtCargo.Text, txtSalario.Text, txtRamal.Text);
+            LimparCampos();
+            MessageBox.Show("Funcionários cadastrados!", "Cadastro - Funcionários");
+
+            /*
+            CadastrarFuncionario();
+            CarregarGrid();
+            LimparCampos();
+            */
+        }
+
+        private void retornarFuncionario()
+        {
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03";
+            conexao.Open();
+
+            string comandoSQL = "select * from tb_funcionario";
+
+            SqlCommand sqlCommand = new SqlCommand(comandoSQL, conexao);
+
+            SqlDataAdapter sda = new SqlDataAdapter(sqlCommand);
+            DataTable dt = new DataTable();
+
+            sda.Fill(dt);
+
+            dgvFuncionarios.DataSource = dt;
+
+            conexao.Close();
+        }
+
+        private void dgvFuncionarios_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtCodPessoaF.Text = dgvFuncionarios.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtCargo.Text = dgvFuncionarios.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtSalario.Text = dgvFuncionarios.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtRamal.Text = dgvFuncionarios.Rows[e.RowIndex].Cells[4].Value.ToString();
+
+            retornarFuncionario();
+        }
+
+        /*
         private void CarregarGrid()
         {
             dgvFuncionarios.DataSource = null;
             dgvFuncionarios.DataSource = lista_Funcionarios;
         }
-
-        private void btnSalvar_Click(object sender, EventArgs e)
-        {
-            CadastrarFuncionario();
-            CarregarGrid();
-            LimparCampos();
-
-            /*
-            CadastrarFuncionarios(Convert.ToInt32(txtCodPessoaF.Text), txtCargo.Text, txtSalario.Text, txtRamal.Text);
-            LimparCampos();
-            MessageBox.Show("Funcionários cadastrados!", "Cadastro - Funcionários");
-            */
-        }
-
-        //PROGRAMA NÃO RECONHECEU O BANCO, deixar comentando em caso de ser a máquina e não o código
+        */
 
         /*
        private void CadastrarFuncionarios(int cd_Pessoa, string ds_Cargo, string nr_Salario, string nr_Ramal)
        {
-           SqlConnection conexao = new SqlConnection();
-           conexao.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=CidadeInteligente.accdb; Persist Security Info=False;";
-           conexao.Open();
-           string insertFuncionarios = string.Concat("insert into tb_funcionario (cd_Pessoa, ds_Cargo, nr_Salario, nr_Ramal) values ('", cd_Pessoa, "', '", ds_Cargo, "', '", nr_Salario, "', '", nr_Ramal, "') ");
-           SqlCommand comandoSql = new SqlCommand(insertFuncionarios, conexao);
-           comandoSql.ExecuteNonQuery();
-           conexao.Close();
+           
        }
        */
     }

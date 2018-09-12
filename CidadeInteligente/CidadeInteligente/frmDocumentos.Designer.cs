@@ -44,8 +44,6 @@
             this.lblCNH = new System.Windows.Forms.Label();
             this.txtRG = new System.Windows.Forms.TextBox();
             this.dgvDocumentos = new System.Windows.Forms.DataGridView();
-            this.lblCodDoc = new System.Windows.Forms.Label();
-            this.txtCodDoc = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,10 +52,10 @@
             this.btnLimpar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnLimpar.Location = new System.Drawing.Point(492, 186);
+            this.btnLimpar.Location = new System.Drawing.Point(319, 186);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(85, 35);
-            this.btnLimpar.TabIndex = 9;
+            this.btnLimpar.TabIndex = 8;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
@@ -67,20 +65,20 @@
             this.btnSalvar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnSalvar.Location = new System.Drawing.Point(402, 186);
+            this.btnSalvar.Location = new System.Drawing.Point(228, 186);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(85, 35);
-            this.btnSalvar.TabIndex = 8;
+            this.btnSalvar.TabIndex = 7;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtReservista
             // 
-            this.txtReservista.Location = new System.Drawing.Point(165, 138);
+            this.txtReservista.Location = new System.Drawing.Point(165, 100);
             this.txtReservista.Name = "txtReservista";
             this.txtReservista.Size = new System.Drawing.Size(134, 20);
-            this.txtReservista.TabIndex = 5;
+            this.txtReservista.TabIndex = 3;
             // 
             // txtCPF
             // 
@@ -91,23 +89,23 @@
             // 
             // txtCNH
             // 
-            this.txtCNH.Location = new System.Drawing.Point(124, 173);
+            this.txtCNH.Location = new System.Drawing.Point(124, 138);
             this.txtCNH.Name = "txtCNH";
             this.txtCNH.Size = new System.Drawing.Size(175, 20);
-            this.txtCNH.TabIndex = 7;
+            this.txtCNH.TabIndex = 5;
             // 
             // txtCodPessoaD
             // 
-            this.txtCodPessoaD.Location = new System.Drawing.Point(191, 100);
+            this.txtCodPessoaD.Location = new System.Drawing.Point(191, 64);
             this.txtCodPessoaD.Name = "txtCodPessoaD";
             this.txtCodPessoaD.Size = new System.Drawing.Size(108, 20);
-            this.txtCodPessoaD.TabIndex = 2;
+            this.txtCodPessoaD.TabIndex = 1;
             // 
             // lblReservista
             // 
             this.lblReservista.AutoSize = true;
             this.lblReservista.Font = new System.Drawing.Font("Courier New", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReservista.Location = new System.Drawing.Point(41, 140);
+            this.lblReservista.Location = new System.Drawing.Point(41, 102);
             this.lblReservista.Name = "lblReservista";
             this.lblReservista.Size = new System.Drawing.Size(104, 16);
             this.lblReservista.TabIndex = 15;
@@ -137,7 +135,7 @@
             // 
             this.lblCodPessoa.AutoSize = true;
             this.lblCodPessoa.Font = new System.Drawing.Font("Courier New", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodPessoa.Location = new System.Drawing.Point(41, 102);
+            this.lblCodPessoa.Location = new System.Drawing.Point(41, 66);
             this.lblCodPessoa.Name = "lblCodPessoa";
             this.lblCodPessoa.Size = new System.Drawing.Size(128, 16);
             this.lblCodPessoa.TabIndex = 12;
@@ -175,7 +173,7 @@
             // 
             this.lblCNH.AutoSize = true;
             this.lblCNH.Font = new System.Drawing.Font("Courier New", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCNH.Location = new System.Drawing.Point(41, 175);
+            this.lblCNH.Location = new System.Drawing.Point(41, 140);
             this.lblCNH.Name = "lblCNH";
             this.lblCNH.Size = new System.Drawing.Size(48, 16);
             this.lblCNH.TabIndex = 24;
@@ -191,35 +189,17 @@
             // dgvDocumentos
             // 
             this.dgvDocumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDocumentos.Location = new System.Drawing.Point(44, 244);
+            this.dgvDocumentos.Location = new System.Drawing.Point(24, 235);
             this.dgvDocumentos.Name = "dgvDocumentos";
-            this.dgvDocumentos.Size = new System.Drawing.Size(549, 150);
-            this.dgvDocumentos.TabIndex = 26;
-            // 
-            // lblCodDoc
-            // 
-            this.lblCodDoc.AutoSize = true;
-            this.lblCodDoc.Font = new System.Drawing.Font("Courier New", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodDoc.Location = new System.Drawing.Point(41, 66);
-            this.lblCodDoc.Name = "lblCodDoc";
-            this.lblCodDoc.Size = new System.Drawing.Size(152, 16);
-            this.lblCodDoc.TabIndex = 27;
-            this.lblCodDoc.Text = "Código Documento: ";
-            // 
-            // txtCodDoc
-            // 
-            this.txtCodDoc.Location = new System.Drawing.Point(191, 64);
-            this.txtCodDoc.Name = "txtCodDoc";
-            this.txtCodDoc.Size = new System.Drawing.Size(108, 20);
-            this.txtCodDoc.TabIndex = 1;
+            this.dgvDocumentos.Size = new System.Drawing.Size(583, 150);
+            this.dgvDocumentos.TabIndex = 25;
+            this.dgvDocumentos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDocumentos_CellContentClick);
             // 
             // frmDocumentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 419);
-            this.Controls.Add(this.txtCodDoc);
-            this.Controls.Add(this.lblCodDoc);
+            this.ClientSize = new System.Drawing.Size(636, 397);
             this.Controls.Add(this.dgvDocumentos);
             this.Controls.Add(this.txtRG);
             this.Controls.Add(this.lblCNH);
@@ -263,7 +243,5 @@
         private System.Windows.Forms.Label lblCNH;
         private System.Windows.Forms.TextBox txtRG;
         private System.Windows.Forms.DataGridView dgvDocumentos;
-        private System.Windows.Forms.Label lblCodDoc;
-        private System.Windows.Forms.TextBox txtCodDoc;
     }
 }

@@ -106,6 +106,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
     <None Include="CidadeInteligenteDataSet.xsc">
@@ -131,9 +132,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CidadeInteligente.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <None Include="Resources\backg.jpg" />
+    <None Include="Resources\backg3.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Classes\Classes.csproj">

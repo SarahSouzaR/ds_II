@@ -40,21 +40,15 @@
             this.txtDtNasc = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.dgvPessoas = new System.Windows.Forms.DataGridView();
-            this.cdPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nmPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dsEnderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dsEstCivilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtNascimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cidadeInteligenteDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cidadeInteligenteDataSet = new CidadeInteligente.CidadeInteligenteDataSet();
-            this.lblCdPessoa = new System.Windows.Forms.Label();
-            this.txtCdPessoa = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPessoas)).BeginInit();
+            this.dgvPesquisaPessoa = new System.Windows.Forms.DataGridView();
+            this.btnApagar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidadeInteligenteDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidadeInteligenteDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaPessoa)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitlePessoa
@@ -148,7 +142,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(318, 213);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(82, 35);
-            this.btnSalvar.TabIndex = 6;
+            this.btnSalvar.TabIndex = 5;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -161,56 +155,10 @@
             this.btnLimpar.Location = new System.Drawing.Point(416, 213);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(82, 35);
-            this.btnLimpar.TabIndex = 7;
+            this.btnLimpar.TabIndex = 6;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
-            // 
-            // dgvPessoas
-            // 
-            this.dgvPessoas.AutoGenerateColumns = false;
-            this.dgvPessoas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPessoas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cdPessoaDataGridViewTextBoxColumn,
-            this.nmPessoaDataGridViewTextBoxColumn,
-            this.dsEnderecoDataGridViewTextBoxColumn,
-            this.dsEstCivilDataGridViewTextBoxColumn,
-            this.dtNascimentoDataGridViewTextBoxColumn});
-            this.dgvPessoas.DataSource = this.pessoaBindingSource;
-            this.dgvPessoas.Location = new System.Drawing.Point(18, 270);
-            this.dgvPessoas.Name = "dgvPessoas";
-            this.dgvPessoas.Size = new System.Drawing.Size(468, 150);
-            this.dgvPessoas.TabIndex = 11;
-            // 
-            // cdPessoaDataGridViewTextBoxColumn
-            // 
-            this.cdPessoaDataGridViewTextBoxColumn.DataPropertyName = "cd_Pessoa";
-            this.cdPessoaDataGridViewTextBoxColumn.HeaderText = "cd_Pessoa";
-            this.cdPessoaDataGridViewTextBoxColumn.Name = "cdPessoaDataGridViewTextBoxColumn";
-            // 
-            // nmPessoaDataGridViewTextBoxColumn
-            // 
-            this.nmPessoaDataGridViewTextBoxColumn.DataPropertyName = "nm_Pessoa";
-            this.nmPessoaDataGridViewTextBoxColumn.HeaderText = "nm_Pessoa";
-            this.nmPessoaDataGridViewTextBoxColumn.Name = "nmPessoaDataGridViewTextBoxColumn";
-            // 
-            // dsEnderecoDataGridViewTextBoxColumn
-            // 
-            this.dsEnderecoDataGridViewTextBoxColumn.DataPropertyName = "ds_Endereco";
-            this.dsEnderecoDataGridViewTextBoxColumn.HeaderText = "ds_Endereco";
-            this.dsEnderecoDataGridViewTextBoxColumn.Name = "dsEnderecoDataGridViewTextBoxColumn";
-            // 
-            // dsEstCivilDataGridViewTextBoxColumn
-            // 
-            this.dsEstCivilDataGridViewTextBoxColumn.DataPropertyName = "ds_EstCivil";
-            this.dsEstCivilDataGridViewTextBoxColumn.HeaderText = "ds_EstCivil";
-            this.dsEstCivilDataGridViewTextBoxColumn.Name = "dsEstCivilDataGridViewTextBoxColumn";
-            // 
-            // dtNascimentoDataGridViewTextBoxColumn
-            // 
-            this.dtNascimentoDataGridViewTextBoxColumn.DataPropertyName = "dt_Nascimento";
-            this.dtNascimentoDataGridViewTextBoxColumn.HeaderText = "dt_Nascimento";
-            this.dtNascimentoDataGridViewTextBoxColumn.Name = "dtNascimentoDataGridViewTextBoxColumn";
             // 
             // pessoaBindingSource
             // 
@@ -226,32 +174,35 @@
             this.cidadeInteligenteDataSet.DataSetName = "CidadeInteligenteDataSet";
             this.cidadeInteligenteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // lblCdPessoa
+            // dgvPesquisaPessoa
             // 
-            this.lblCdPessoa.AutoSize = true;
-            this.lblCdPessoa.Font = new System.Drawing.Font("Courier New", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCdPessoa.Location = new System.Drawing.Point(15, 213);
-            this.lblCdPessoa.Name = "lblCdPessoa";
-            this.lblCdPessoa.Size = new System.Drawing.Size(128, 16);
-            this.lblCdPessoa.TabIndex = 12;
-            this.lblCdPessoa.Text = "Código Pessoa: ";
+            this.dgvPesquisaPessoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPesquisaPessoa.Location = new System.Drawing.Point(32, 274);
+            this.dgvPesquisaPessoa.Name = "dgvPesquisaPessoa";
+            this.dgvPesquisaPessoa.Size = new System.Drawing.Size(452, 150);
+            this.dgvPesquisaPessoa.TabIndex = 7;
+            this.dgvPesquisaPessoa.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPesquisaPessoa_CellDoubleClick);
             // 
-            // txtCdPessoa
+            // btnApagar
             // 
-            this.txtCdPessoa.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCdPessoa.Location = new System.Drawing.Point(149, 211);
-            this.txtCdPessoa.Name = "txtCdPessoa";
-            this.txtCdPessoa.Size = new System.Drawing.Size(84, 20);
-            this.txtCdPessoa.TabIndex = 5;
+            this.btnApagar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApagar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnApagar.Location = new System.Drawing.Point(219, 213);
+            this.btnApagar.Name = "btnApagar";
+            this.btnApagar.Size = new System.Drawing.Size(82, 35);
+            this.btnApagar.TabIndex = 8;
+            this.btnApagar.Text = "Apagar";
+            this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // frmPessoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 442);
-            this.Controls.Add(this.txtCdPessoa);
-            this.Controls.Add(this.lblCdPessoa);
-            this.Controls.Add(this.dgvPessoas);
+            this.ClientSize = new System.Drawing.Size(513, 447);
+            this.Controls.Add(this.btnApagar);
+            this.Controls.Add(this.dgvPesquisaPessoa);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtDtNasc);
@@ -267,10 +218,10 @@
             this.Text = "frmPessoa";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPessoa_FormClosing);
             this.Load += new System.EventHandler(this.frmPessoa_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPessoas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidadeInteligenteDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidadeInteligenteDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaPessoa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,16 +240,10 @@
         private System.Windows.Forms.TextBox txtDtNasc;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.DataGridView dgvPessoas;
         private System.Windows.Forms.BindingSource cidadeInteligenteDataSetBindingSource;
         private CidadeInteligenteDataSet cidadeInteligenteDataSet;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cdPessoaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nmPessoaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dsEnderecoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dsEstCivilDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dtNascimentoDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource pessoaBindingSource;
-        private System.Windows.Forms.Label lblCdPessoa;
-        private System.Windows.Forms.TextBox txtCdPessoa;
+        private System.Windows.Forms.DataGridView dgvPesquisaPessoa;
+        private System.Windows.Forms.Button btnApagar;
     }
 }

@@ -20,17 +20,16 @@ namespace CidadeInteligente
 
         private void frmPessoa_Load(object sender, EventArgs e)
         {
-            CadastrarPessoa();
-            CarregarGrid();
+            retornarPessoas();
         }
-        
+
         private void LimparCampos()
         {
             txtNome.Text = "";
             txtEndereco.Text = "";
             txtEstCivil.Text = "";
             txtDtNasc.Text = "";
-            txtCdPessoa.Text = "";
+            //txtCdPessoa.Text = "";
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
@@ -38,10 +37,19 @@ namespace CidadeInteligente
             LimparCampos();
         }
 
-        List<Pessoa> lista_Pessoas = new List<Pessoa>();
+        //List<Pessoa> lista_Pessoas = new List<Pessoa>();
 
-        private void CadastrarPessoa()
+        private void CadastrarPessoa(string nm_Pessoa, string ds_Endereco, string ds_EstCivil, DateTime dt_Nascimento)
         {
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03";
+            conexao.Open();
+            string insertPessoa = string.Concat("insert into tb_pessoa (nm_Pessoa, ds_Endereco, ds_EstCivil, dt_Nascimento) values ('", nm_Pessoa, "', '", ds_Endereco, "', '", ds_EstCivil, "', '", dt_Nascimento, "') ");
+            SqlCommand comandoSql = new SqlCommand(insertPessoa, conexao);
+            comandoSql.ExecuteNonQuery();
+            conexao.Close();
+            
+            /*
             Pessoa pessoa1 = new Pessoa();
             pessoa1.nm_Pessoa = txtNome.Text;
             pessoa1.ds_Endereco = txtEndereco.Text;
@@ -50,24 +58,25 @@ namespace CidadeInteligente
             pessoa1.cd_Pessoa = txtCdPessoa.Text;
 
             lista_Pessoas.Add(pessoa1);
+            */
         }
-
-        private void CarregarGrid()
-        {
-            dgvPessoas.DataSource = null;
-            dgvPessoas.DataSource = lista_Pessoas;
-        }
-
+                
         private void btnSalvar_Click(object sender, EventArgs e)
-        {            
-            CadastrarPessoa();
-            CarregarGrid();
-            LimparCampos();
-
-            /*CadastrarPessoa(txtNome.Text, txtEndereco.Text, txtEstCivil.Text, Convert.ToDateTime(txtDtNasc.Text));
+        {
+            CadastrarPessoa(txtNome.Text, txtEndereco.Text, txtEstCivil.Text, Convert.ToDateTime(txtDtNasc.Text));
             LimparCampos();
             MessageBox.Show("Pessoa cadastrada!", "Cadastro - Pessoas");
-            */
+        }
+
+        private void ApagarPessoa()
+        {
+
+        }
+
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void frmPessoa_FormClosing(object sender, FormClosingEventArgs e)
@@ -80,20 +89,48 @@ namespace CidadeInteligente
             }
         }
 
-        //PROGRAMA NÃO RECONHECEU O BANCO, deixar comentando em caso de ser a máquina e não o código
+        //na ausência de um banco, usar a lista
 
         /*
-        private void CadastrarPessoa(string nm_Pessoa, string ds_Endereco, string ds_EstCivil, DateTime dt_Nascimento)
+        private void CarregarGrid()
         {
-            SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=CidadeInteligente.accdb; Persist Security Info=False;";
-            conexao.Open();
-            string insertPessoa = string.Concat("insert into tb_pessoa (nm_Pessoa, ds_Endereco, ds_EstCivil, dt_Nascimento) values ('",nm_Pessoa,"', '",ds_Endereco,"', '",ds_EstCivil,"', '",dt_Nascimento,"') ");
-            SqlCommand comandoSql = new SqlCommand(insertPessoa, conexao);
-            comandoSql.ExecuteNonQuery();
-            conexao.Close();
-
+            dgvPessoas.DataSource = null;
+            dgvPessoas.DataSource = lista_Pessoas;
         }
         */
+
+        private void retornarPessoas()
+        {
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03";
+            conexao.Open();
+
+            string comandoSQL = "select * from tb_pessoa";
+            //string comandoSQL = "select cd_Pessoa 'Código da Pessoa', nm_Pessoa 'Nome da Pessoa' from tb_pessoa";
+
+            SqlCommand sqlCommand = new SqlCommand(comandoSQL, conexao);
+
+            SqlDataAdapter sda = new SqlDataAdapter(sqlCommand);
+            DataTable dt = new DataTable();
+
+            sda.Fill(dt);
+
+            dgvPesquisaPessoa.DataSource = dt;
+
+            conexao.Close();
+        }
+
+        private void dgvPesquisaPessoa_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtNome.Text = dgvPesquisaPessoa.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtEndereco.Text = dgvPesquisaPessoa.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtEstCivil.Text = dgvPesquisaPessoa.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtDtNasc.Text = dgvPesquisaPessoa.Rows[e.RowIndex].Cells[4].Value.ToString();
+
+            //MessageBox.Show(dgvPesquisaPessoa.Rows[e.RowIndex].Cells[0].Value.ToString());
+            //MessageBox.Show("Olá mundo!", "Etec ZL");
+
+            retornarPessoas();
+        }
     }
 }

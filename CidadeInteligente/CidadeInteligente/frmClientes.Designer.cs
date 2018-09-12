@@ -35,8 +35,6 @@
             this.lblDtInclusao = new System.Windows.Forms.Label();
             this.lblCodPessoaC = new System.Windows.Forms.Label();
             this.lblTitleFunc = new System.Windows.Forms.Label();
-            this.lblCodCliente = new System.Windows.Forms.Label();
-            this.txtCdCliente = new System.Windows.Forms.TextBox();
             this.dgvCliente = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
@@ -114,24 +112,6 @@
             this.lblTitleFunc.TabIndex = 22;
             this.lblTitleFunc.Text = "CADASTRO DOS CLIENTES";
             // 
-            // lblCodCliente
-            // 
-            this.lblCodCliente.AutoSize = true;
-            this.lblCodCliente.Font = new System.Drawing.Font("Courier New", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodCliente.Location = new System.Drawing.Point(24, 69);
-            this.lblCodCliente.Name = "lblCodCliente";
-            this.lblCodCliente.Size = new System.Drawing.Size(136, 16);
-            this.lblCodCliente.TabIndex = 33;
-            this.lblCodCliente.Text = "Código Cliente: ";
-            // 
-            // txtCdCliente
-            // 
-            this.txtCdCliente.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCdCliente.Location = new System.Drawing.Point(170, 67);
-            this.txtCdCliente.Name = "txtCdCliente";
-            this.txtCdCliente.Size = new System.Drawing.Size(91, 20);
-            this.txtCdCliente.TabIndex = 1;
-            // 
             // dgvCliente
             // 
             this.dgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -139,6 +119,8 @@
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.Size = new System.Drawing.Size(452, 150);
             this.dgvCliente.TabIndex = 35;
+            //this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
+            this.dgvCliente.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellDoubleClick);
             // 
             // frmClientes
             // 
@@ -146,8 +128,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(506, 409);
             this.Controls.Add(this.dgvCliente);
-            this.Controls.Add(this.txtCdCliente);
-            this.Controls.Add(this.lblCodCliente);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtDtInclusao);
@@ -173,8 +153,6 @@
         private System.Windows.Forms.Label lblDtInclusao;
         private System.Windows.Forms.Label lblCodPessoaC;
         private System.Windows.Forms.Label lblTitleFunc;
-        private System.Windows.Forms.Label lblCodCliente;
-        private System.Windows.Forms.TextBox txtCdCliente;
         private System.Windows.Forms.DataGridView dgvCliente;
     }
 }
