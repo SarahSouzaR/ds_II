@@ -70,7 +70,13 @@ namespace CidadeInteligente
 
         private void ApagarPessoa()
         {
-
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03";
+            conexao.Open();
+            string deletePessoa = string.Concat("delete from tb_pessoa where id=");
+            SqlCommand comandoSql = new SqlCommand(deletePessoa, conexao);
+            comandoSql.ExecuteNonQuery();
+            conexao.Close();
         }
 
 
