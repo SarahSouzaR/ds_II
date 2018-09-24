@@ -36,6 +36,7 @@
             this.lblCodPessoaC = new System.Windows.Forms.Label();
             this.lblTitleFunc = new System.Windows.Forms.Label();
             this.dgvCliente = new System.Windows.Forms.DataGridView();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +45,7 @@
             this.btnLimpar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnLimpar.Location = new System.Drawing.Point(397, 161);
+            this.btnLimpar.Location = new System.Drawing.Point(298, 161);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(82, 35);
             this.btnLimpar.TabIndex = 5;
@@ -57,7 +58,7 @@
             this.btnSalvar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnSalvar.Location = new System.Drawing.Point(309, 161);
+            this.btnSalvar.Location = new System.Drawing.Point(210, 161);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(82, 35);
             this.btnSalvar.TabIndex = 4;
@@ -119,14 +120,27 @@
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.Size = new System.Drawing.Size(452, 150);
             this.dgvCliente.TabIndex = 35;
-            //this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
             this.dgvCliente.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellDoubleClick);
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnPesquisar.Location = new System.Drawing.Point(386, 161);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(93, 35);
+            this.btnPesquisar.TabIndex = 36;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(506, 409);
+            this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.dgvCliente);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
@@ -154,5 +168,6 @@
         private System.Windows.Forms.Label lblCodPessoaC;
         private System.Windows.Forms.Label lblTitleFunc;
         private System.Windows.Forms.DataGridView dgvCliente;
+        private System.Windows.Forms.Button btnPesquisar;
     }
 }

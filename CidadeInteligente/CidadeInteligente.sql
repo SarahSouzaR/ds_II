@@ -1,5 +1,5 @@
-use master
-go
+--use master
+--go
 drop database CidadeInteligente
 go
 
@@ -49,3 +49,48 @@ create table tb_cliente(
 	primary key (cd_Cliente),
 	foreign key (cd_Pessoa) references tb_pessoa (cd_Pessoa)
 )
+
+insert into tb_pessoa values ('Sarah','Rua X','Solteira','1999-09-10')
+
+
+if OBJECT_ID (ps_Nome) is not null
+drop proc ps_Nome
+go
+	create procedure ps_Nome
+	@nm_Pessoa varchar(250) = null
+as 
+begin
+	select * from tb_pessoa
+	where @nm_Pessoa is null or nm_Pessoa like '%' + @nm_Pessoa + '%'
+end
+
+
+if OBJECT_ID (cd_CliPessoa) is not null
+drop proc cd_CliPessoa
+go
+	create procedure cd_CliPessoa
+	@cd_Pessoa int = null
+as
+begin
+	select * from tb_cliente
+	where @cd_Pessoa is null or cd_Pessoa like '%' + @cd_Pessoa + '%'
+end
+
+
+if object_id (cpf) is not null
+drop cpf
+go
+	create procedure cpf
+	@nr_CPF varchar(32) = null
+as
+begin
+	select * from tb_documentos
+	where @nr_CPF is null or nr_CPF like '%' + @nr_CPF + '%'
+end
+
+
+
+
+select * from tb_pessoa
+
+ps_Nome

@@ -44,6 +44,7 @@
             this.lblCNH = new System.Windows.Forms.Label();
             this.txtRG = new System.Windows.Forms.TextBox();
             this.dgvDocumentos = new System.Windows.Forms.DataGridView();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +53,7 @@
             this.btnLimpar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnLimpar.Location = new System.Drawing.Point(319, 186);
+            this.btnLimpar.Location = new System.Drawing.Point(280, 186);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(85, 35);
             this.btnLimpar.TabIndex = 8;
@@ -65,7 +66,7 @@
             this.btnSalvar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnSalvar.Location = new System.Drawing.Point(228, 186);
+            this.btnSalvar.Location = new System.Drawing.Point(189, 186);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(85, 35);
             this.btnSalvar.TabIndex = 7;
@@ -195,11 +196,25 @@
             this.dgvDocumentos.TabIndex = 25;
             this.dgvDocumentos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDocumentos_CellContentClick);
             // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnPesquisar.Location = new System.Drawing.Point(371, 186);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(93, 35);
+            this.btnPesquisar.TabIndex = 26;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
+            // 
             // frmDocumentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(636, 397);
+            this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.dgvDocumentos);
             this.Controls.Add(this.txtRG);
             this.Controls.Add(this.lblCNH);
@@ -243,5 +258,6 @@
         private System.Windows.Forms.Label lblCNH;
         private System.Windows.Forms.TextBox txtRG;
         private System.Windows.Forms.DataGridView dgvDocumentos;
+        private System.Windows.Forms.Button btnPesquisar;
     }
 }

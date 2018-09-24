@@ -42,7 +42,7 @@ namespace CidadeInteligente
         private void CadastrarFuncionario(int cd_Pessoa, string ds_Cargo, string nr_Salario, string nr_Ramal)
         {
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03";
+            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-08-01";
             conexao.Open();
             string insertFuncionarios = string.Concat("insert into tb_funcionario (cd_Pessoa, ds_Cargo, nr_Salario, nr_Ramal) values ('", cd_Pessoa, "', '", ds_Cargo, "', '", nr_Salario, "', '", nr_Ramal, "') ");
             SqlCommand comandoSql = new SqlCommand(insertFuncionarios, conexao);
@@ -79,7 +79,7 @@ namespace CidadeInteligente
         private void retornarFuncionario()
         {
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03";
+            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-08-01";
             conexao.Open();
 
             string comandoSQL = "select * from tb_funcionario";
@@ -104,6 +104,11 @@ namespace CidadeInteligente
             txtRamal.Text = dgvFuncionarios.Rows[e.RowIndex].Cells[4].Value.ToString();
 
             retornarFuncionario();
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+
         }
 
         /*

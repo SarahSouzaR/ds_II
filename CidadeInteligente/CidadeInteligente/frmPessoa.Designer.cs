@@ -42,12 +42,11 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cidadeInteligenteDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cidadeInteligenteDataSet = new CidadeInteligente.CidadeInteligenteDataSet();
             this.dgvPesquisaPessoa = new System.Windows.Forms.DataGridView();
             this.btnApagar = new System.Windows.Forms.Button();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidadeInteligenteDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cidadeInteligenteDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaPessoa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -139,7 +138,7 @@
             this.btnSalvar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnSalvar.Location = new System.Drawing.Point(318, 213);
+            this.btnSalvar.Location = new System.Drawing.Point(221, 213);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(82, 35);
             this.btnSalvar.TabIndex = 5;
@@ -152,9 +151,9 @@
             this.btnLimpar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnLimpar.Location = new System.Drawing.Point(416, 213);
+            this.btnLimpar.Location = new System.Drawing.Point(309, 213);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(82, 35);
+            this.btnLimpar.Size = new System.Drawing.Size(76, 35);
             this.btnLimpar.TabIndex = 6;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
@@ -163,16 +162,6 @@
             // pessoaBindingSource
             // 
             this.pessoaBindingSource.DataSource = typeof(Classes.Pessoa);
-            // 
-            // cidadeInteligenteDataSetBindingSource
-            // 
-            this.cidadeInteligenteDataSetBindingSource.DataSource = this.cidadeInteligenteDataSet;
-            this.cidadeInteligenteDataSetBindingSource.Position = 0;
-            // 
-            // cidadeInteligenteDataSet
-            // 
-            this.cidadeInteligenteDataSet.DataSetName = "CidadeInteligenteDataSet";
-            this.cidadeInteligenteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dgvPesquisaPessoa
             // 
@@ -188,7 +177,7 @@
             this.btnApagar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApagar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnApagar.Location = new System.Drawing.Point(219, 213);
+            this.btnApagar.Location = new System.Drawing.Point(133, 213);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(82, 35);
             this.btnApagar.TabIndex = 8;
@@ -196,11 +185,25 @@
             this.btnApagar.UseVisualStyleBackColor = false;
             this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnPesquisar.Location = new System.Drawing.Point(391, 213);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(93, 35);
+            this.btnPesquisar.TabIndex = 9;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
+            // 
             // frmPessoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(513, 447);
+            this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.dgvPesquisaPessoa);
             this.Controls.Add(this.btnLimpar);
@@ -220,7 +223,6 @@
             this.Load += new System.EventHandler(this.frmPessoa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidadeInteligenteDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cidadeInteligenteDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaPessoa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -241,9 +243,9 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.BindingSource cidadeInteligenteDataSetBindingSource;
-        private CidadeInteligenteDataSet cidadeInteligenteDataSet;
         private System.Windows.Forms.BindingSource pessoaBindingSource;
         private System.Windows.Forms.DataGridView dgvPesquisaPessoa;
         private System.Windows.Forms.Button btnApagar;
+        private System.Windows.Forms.Button btnPesquisar;
     }
 }

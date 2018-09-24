@@ -8,3 +8,13 @@ G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\Classes\bin\Debug\Classes.pdb
 G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\Classes\obj\Debug\Classes.csprojResolveAssemblyReference.cache
 G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\Classes\obj\Debug\Classes.dll
 G:\Etec II - 3 SEM\DS II\Git\CidadeInteligente\Classes\obj\Debug\Classes.pdb
+G:\Etec II - 3 SEM\DS II\CidadeInteligente\Classes\bin\Debug\Classes.dll
+G:\Etec II - 3 SEM\DS II\CidadeInteligente\Classes\bin\Debug\Classes.pdb
+G:\Etec II - 3 SEM\DS II\CidadeInteligente\Classes\obj\Debug\Classes.csprojResolveAssemblyReference.cache
+G:\Etec II - 3 SEM\DS II\CidadeInteligente\Classes\obj\Debug\Classes.dll
+G:\Etec II - 3 SEM\DS II\CidadeInteligente\Classes\obj\Debug\Classes.pdb
+D:\Etec II - 3 SEM\DS II\CidadeInteligente\Classes\bin\Debug\Classes.dll
+D:\Etec II - 3 SEM\DS II\CidadeInteligente\Classes\bin\Debug\Classes.pdb
+D:\Etec II - 3 SEM\DS II\CidadeInteligente\Classes\obj\Debug\Classes.csprojResolveAssemblyReference.cache
+D:\Etec II - 3 SEM\DS II\CidadeInteligente\Classes\obj\Debug\Classes.dll
+D:\Etec II - 3 SEM\DS II\CidadeInteligente\Classes\obj\Debug\Classes.pdb

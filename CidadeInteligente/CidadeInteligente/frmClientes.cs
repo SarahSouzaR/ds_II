@@ -40,7 +40,7 @@ namespace CidadeInteligente
         private void CadastrarCliente(int cd_Pessoa, DateTime dt_Inclusao)
         {
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03";
+            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-08-01";
             conexao.Open();
             string insertClientes = string.Concat("insert into tb_cliente (cd_Pessoa, dt_Inclusao) values ('", cd_Pessoa, "', '", dt_Inclusao, "') ");
             SqlCommand comandoSql = new SqlCommand(insertClientes, conexao);
@@ -76,7 +76,7 @@ namespace CidadeInteligente
         private void retornarClientes()
         {
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03";
+            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-08-01";
             conexao.Open();
 
             string comandoSQL = "select * from tb_cliente";
@@ -99,6 +99,45 @@ namespace CidadeInteligente
             txtDtInclusao.Text = dgvCliente.Rows[e.RowIndex].Cells[2].Value.ToString();
 
             retornarClientes();
+        }
+
+        private void carregarCliente()
+        {
+            DataSet ds = new DataSet();
+            SqlConnection conexao = null;
+
+            try
+            {
+                conexao = new SqlConnection("Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03");
+                conexao.Open();
+
+                SqlCommand cmd = new SqlCommand("cd_CliPessoa", conexao);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                if (txtCodPessoaC.Text != "")
+                {
+                    cmd.Parameters.AddWithValue("@nr_CPF", txtCodPessoaC.Text);
+                }
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(ds);
+
+                dgvCliente.DataSource = ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro! Contate o administrador!", "ERROR");
+            }
+            finally 
+            {
+                conexao.Close();
+            }
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            carregarCliente();
         }
 
         

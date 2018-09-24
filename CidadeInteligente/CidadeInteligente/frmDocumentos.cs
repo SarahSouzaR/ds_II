@@ -44,7 +44,7 @@ namespace CidadeInteligente
         private void CadastrarDocumentos(int cd_Pessoa, string nr_RG, string nr_CPF, string nr_Reservista, string nr_CTPS, string nr_CNH)
         {
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03";
+            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-08-01";
             conexao.Open();
             string insertDoc = string.Concat("insert into tb_documentos (cd_Pessoa, nr_RG, nr_CPF, nr_Reservista, nr_CTPS, nr_CNH) values ('", cd_Pessoa, "', '", nr_RG, "', '", nr_CPF, "', '", nr_Reservista, "', '", nr_CTPS, "', '", nr_CNH, "') ");
             SqlCommand comandoSql = new SqlCommand(insertDoc, conexao);
@@ -62,7 +62,7 @@ namespace CidadeInteligente
         private void retornarDocumentos()
         {
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03";
+            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-08-01";
             conexao.Open();
 
             string comandoSQL = "select * from tb_documentos ";
@@ -89,6 +89,48 @@ namespace CidadeInteligente
             txtCNH.Text = dgvDocumentos.Rows[e.RowIndex].Cells[6].Value.ToString();
 
             retornarDocumentos();
+        }
+
+        private void carregarDocumento()
+        {
+            DataSet ds = new DataSet();
+
+            SqlConnection conexao = null;
+
+            try
+            {
+                conexao = new SqlConnection("Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03");
+                conexao.Open();
+
+                SqlCommand cmd = new SqlCommand("cpf", conexao);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                if (txtCPF.Text != "")
+                {
+                    cmd.Parameters.AddWithValue("@nr_CPF", txtCPF.Text;
+                }
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(ds);
+
+                dgvDocumentos.DataSource = ds.Tables[0];
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro! Contate o administrador!", "ERROR");
+            }
+
+            finally
+            {
+                conexao.Close();
+            }
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            carregarDocumento();
         }
 
        //PROGRAMA NÃO RECONHECEU O BANCO, deixar comentando em caso de ser a máquina e não o código

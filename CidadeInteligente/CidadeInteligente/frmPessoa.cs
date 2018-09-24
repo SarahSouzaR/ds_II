@@ -21,6 +21,7 @@ namespace CidadeInteligente
         private void frmPessoa_Load(object sender, EventArgs e)
         {
             retornarPessoas();
+            carregarPessoa();
         }
 
         private void LimparCampos()
@@ -42,7 +43,7 @@ namespace CidadeInteligente
         private void CadastrarPessoa(string nm_Pessoa, string ds_Endereco, string ds_EstCivil, DateTime dt_Nascimento)
         {
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03";
+            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-08-01";
             conexao.Open();
             string insertPessoa = string.Concat("insert into tb_pessoa (nm_Pessoa, ds_Endereco, ds_EstCivil, dt_Nascimento) values ('", nm_Pessoa, "', '", ds_Endereco, "', '", ds_EstCivil, "', '", dt_Nascimento, "') ");
             SqlCommand comandoSql = new SqlCommand(insertPessoa, conexao);
@@ -71,7 +72,7 @@ namespace CidadeInteligente
         private void ApagarPessoa()
         {
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03";
+            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-08-01";
             conexao.Open();
             string deletePessoa = string.Concat("delete from tb_pessoa where id=");
             SqlCommand comandoSql = new SqlCommand(deletePessoa, conexao);
@@ -82,7 +83,7 @@ namespace CidadeInteligente
 
         private void btnApagar_Click(object sender, EventArgs e)
         {
-
+            ApagarPessoa();
         }
 
         private void frmPessoa_FormClosing(object sender, FormClosingEventArgs e)
@@ -108,7 +109,7 @@ namespace CidadeInteligente
         private void retornarPessoas()
         {
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03";
+            conexao.ConnectionString = "Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=Cidade;Data Source=LAB-08-01";
             conexao.Open();
 
             string comandoSQL = "select * from tb_pessoa";
@@ -137,6 +138,48 @@ namespace CidadeInteligente
             //MessageBox.Show("Olá mundo!", "Etec ZL");
 
             retornarPessoas();
+        }
+
+        private void carregarPessoa()
+        {
+            DataSet ds = new DataSet();
+
+            SqlConnection conexao = null;
+
+            try
+            {
+                conexao = new SqlConnection("Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=CidadeInteligente;Data Source=LAB-06-03");
+                conexao.Open();
+
+                SqlCommand cmd = new SqlCommand("ps_Nome", conexao);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                if (txtNome.Text != "")
+                {
+                    cmd.Parameters.AddWithValue("@nm_Pessoa", txtNome.Text);
+                }
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(ds);
+
+                dgvPesquisaPessoa.DataSource = ds.Tables[0];
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro! Contate o administrador!", "ERROR");
+            }
+
+            finally
+            {
+                conexao.Close();
+            }
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            carregarPessoa();
         }
     }
 }
