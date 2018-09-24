@@ -1,0 +1,7 @@
+G:\Etec II - 3 SEM\DS II\Estados\Estados\bin\Debug\Estados.exe
+G:\Etec II - 3 SEM\DS II\Estados\Estados\bin\Debug\Estados.pdb
+G:\Etec II - 3 SEM\DS II\Estados\Estados\obj\x86\Debug\Estados.Form1.resources
+G:\Etec II - 3 SEM\DS II\Estados\Estados\obj\x86\Debug\Estados.Properties.Resources.resources
+G:\Etec II - 3 SEM\DS II\Estados\Estados\obj\x86\Debug\Estados.csproj.GenerateResource.Cache
+G:\Etec II - 3 SEM\DS II\Estados\Estados\obj\x86\Debug\Estados.exe
+G:\Etec II - 3 SEM\DS II\Estados\Estados\obj\x86\Debug\Estados.pdb
