@@ -14,3 +14,12 @@ G:\AgendaMedica\AgendaMedica\bin\Debug\AgendaMedica.exe
 G:\AgendaMedica\AgendaMedica\bin\Debug\AgendaMedica.pdb
 F:\Etec II - 3 SEM\DS II\AgendaMedica\AgendaMedica\obj\x86\Debug\AgendaMedica.exe
 F:\Etec II - 3 SEM\DS II\AgendaMedica\AgendaMedica\obj\x86\Debug\AgendaMedica.pdb
+F:\Etec II - 3 SEM\DS II\Git\AgendaMedica\AgendaMedica\obj\x86\Debug\AgendaMedica.exe
+F:\Etec II - 3 SEM\DS II\Git\AgendaMedica\AgendaMedica\obj\x86\Debug\AgendaMedica.pdb
+G:\Etec II - 3 SEM\DS II\Git\AgendaMedica\AgendaMedica\obj\x86\Debug\AgendaMedica.exe
+G:\Etec II - 3 SEM\DS II\Git\AgendaMedica\AgendaMedica\obj\x86\Debug\AgendaMedica.pdb
+G:\Etec II - 3 SEM\DS II\Git\AgendaMedica\AgendaMedica\obj\x86\Debug\AgendaMedica.AgendaConsulta.resources
+G:\Etec II - 3 SEM\DS II\Git\AgendaMedica\AgendaMedica\obj\x86\Debug\AgendaMedica.Properties.Resources.resources
+G:\Etec II - 3 SEM\DS II\Git\AgendaMedica\AgendaMedica\obj\x86\Debug\AgendaMedica.csproj.GenerateResource.Cache
+G:\Etec II - 3 SEM\DS II\Git\AgendaMedica\AgendaMedica\bin\Debug\AgendaMedica.exe
+G:\Etec II - 3 SEM\DS II\Git\AgendaMedica\AgendaMedica\bin\Debug\AgendaMedica.pdb
