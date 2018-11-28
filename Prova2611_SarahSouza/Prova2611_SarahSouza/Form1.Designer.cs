@@ -1,6 +1,6 @@
 ﻿namespace Prova2611_SarahSouza
 {
-    partial class Aluno
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -76,7 +76,7 @@
             this.lblNome.Location = new System.Drawing.Point(27, 73);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(38, 13);
-            this.lblNome.TabIndex = 0;
+            this.lblNome.TabIndex = 1;
             this.lblNome.Text = "Nome:";
             // 
             // lblDtNasc
@@ -85,7 +85,7 @@
             this.lblDtNasc.Location = new System.Drawing.Point(27, 279);
             this.lblDtNasc.Name = "lblDtNasc";
             this.lblDtNasc.Size = new System.Drawing.Size(107, 13);
-            this.lblDtNasc.TabIndex = 0;
+            this.lblDtNasc.TabIndex = 2;
             this.lblDtNasc.Text = "Data de Nascimento:";
             // 
             // lblEmail
@@ -94,7 +94,7 @@
             this.lblEmail.Location = new System.Drawing.Point(27, 173);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(38, 13);
-            this.lblEmail.TabIndex = 0;
+            this.lblEmail.TabIndex = 3;
             this.lblEmail.Text = "E-mail:";
             // 
             // lblEndereco
@@ -103,7 +103,7 @@
             this.lblEndereco.Location = new System.Drawing.Point(27, 209);
             this.lblEndereco.Name = "lblEndereco";
             this.lblEndereco.Size = new System.Drawing.Size(56, 13);
-            this.lblEndereco.TabIndex = 0;
+            this.lblEndereco.TabIndex = 4;
             this.lblEndereco.Text = "Endereço:";
             // 
             // lblTelefone
@@ -112,7 +112,7 @@
             this.lblTelefone.Location = new System.Drawing.Point(27, 244);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(52, 13);
-            this.lblTelefone.TabIndex = 0;
+            this.lblTelefone.TabIndex = 5;
             this.lblTelefone.Text = "Telefone:";
             // 
             // lblRg
@@ -121,7 +121,7 @@
             this.lblRg.Location = new System.Drawing.Point(28, 317);
             this.lblRg.Name = "lblRg";
             this.lblRg.Size = new System.Drawing.Size(26, 13);
-            this.lblRg.TabIndex = 0;
+            this.lblRg.TabIndex = 6;
             this.lblRg.Text = "RG:";
             // 
             // lblCpf
@@ -130,7 +130,7 @@
             this.lblCpf.Location = new System.Drawing.Point(28, 353);
             this.lblCpf.Name = "lblCpf";
             this.lblCpf.Size = new System.Drawing.Size(30, 13);
-            this.lblCpf.TabIndex = 0;
+            this.lblCpf.TabIndex = 7;
             this.lblCpf.Text = "CPF:";
             // 
             // lblRM
@@ -139,7 +139,7 @@
             this.lblRM.Location = new System.Drawing.Point(27, 112);
             this.lblRM.Name = "lblRM";
             this.lblRM.Size = new System.Drawing.Size(27, 13);
-            this.lblRM.TabIndex = 0;
+            this.lblRM.TabIndex = 8;
             this.lblRM.Text = "RM:";
             // 
             // lblTurma
@@ -148,7 +148,7 @@
             this.lblTurma.Location = new System.Drawing.Point(27, 142);
             this.lblTurma.Name = "lblTurma";
             this.lblTurma.Size = new System.Drawing.Size(40, 13);
-            this.lblTurma.TabIndex = 0;
+            this.lblTurma.TabIndex = 9;
             this.lblTurma.Text = "Turma:";
             // 
             // txtNome
@@ -156,56 +156,56 @@
             this.txtNome.Location = new System.Drawing.Point(142, 70);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(253, 20);
-            this.txtNome.TabIndex = 1;
+            this.txtNome.TabIndex = 10;
             // 
             // txtRM
             // 
             this.txtRM.Location = new System.Drawing.Point(142, 105);
             this.txtRM.Name = "txtRM";
             this.txtRM.Size = new System.Drawing.Size(139, 20);
-            this.txtRM.TabIndex = 2;
+            this.txtRM.TabIndex = 11;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(142, 170);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(235, 20);
-            this.txtEmail.TabIndex = 4;
+            this.txtEmail.TabIndex = 12;
             // 
             // txtEndereco
             // 
             this.txtEndereco.Location = new System.Drawing.Point(142, 206);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(253, 20);
-            this.txtEndereco.TabIndex = 5;
+            this.txtEndereco.TabIndex = 14;
             // 
             // txtTel
             // 
             this.txtTel.Location = new System.Drawing.Point(142, 241);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(124, 20);
-            this.txtTel.TabIndex = 6;
+            this.txtTel.TabIndex = 15;
             // 
             // txtDtNasc
             // 
             this.txtDtNasc.Location = new System.Drawing.Point(142, 276);
             this.txtDtNasc.Name = "txtDtNasc";
             this.txtDtNasc.Size = new System.Drawing.Size(112, 20);
-            this.txtDtNasc.TabIndex = 7;
+            this.txtDtNasc.TabIndex = 16;
             // 
             // txtRg
             // 
             this.txtRg.Location = new System.Drawing.Point(142, 314);
             this.txtRg.Name = "txtRg";
             this.txtRg.Size = new System.Drawing.Size(139, 20);
-            this.txtRg.TabIndex = 8;
+            this.txtRg.TabIndex = 17;
             // 
             // txtCpf
             // 
             this.txtCpf.Location = new System.Drawing.Point(142, 346);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(139, 20);
-            this.txtCpf.TabIndex = 9;
+            this.txtCpf.TabIndex = 18;
             // 
             // dgvEstudantes
             // 
@@ -213,7 +213,7 @@
             this.dgvEstudantes.Location = new System.Drawing.Point(571, 89);
             this.dgvEstudantes.Name = "dgvEstudantes";
             this.dgvEstudantes.Size = new System.Drawing.Size(430, 172);
-            this.dgvEstudantes.TabIndex = 0;
+            this.dgvEstudantes.TabIndex = 19;
             this.dgvEstudantes.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEstudantes_CellContentDoubleClick);
             // 
             // lblGrid
@@ -222,7 +222,7 @@
             this.lblGrid.Location = new System.Drawing.Point(568, 55);
             this.lblGrid.Name = "lblGrid";
             this.lblGrid.Size = new System.Drawing.Size(125, 13);
-            this.lblGrid.TabIndex = 0;
+            this.lblGrid.TabIndex = 20;
             this.lblGrid.Text = "Estudantes Cadastrados:";
             // 
             // btnApagar
@@ -230,7 +230,7 @@
             this.btnApagar.Location = new System.Drawing.Point(209, 406);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(75, 23);
-            this.btnApagar.TabIndex = 12;
+            this.btnApagar.TabIndex = 22;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = true;
             this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
@@ -240,7 +240,7 @@
             this.btnLimpar.Location = new System.Drawing.Point(313, 406);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpar.TabIndex = 11;
+            this.btnLimpar.TabIndex = 23;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
@@ -250,7 +250,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(415, 406);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 10;
+            this.btnSalvar.TabIndex = 24;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -260,7 +260,7 @@
             this.btnPesquisar.Location = new System.Drawing.Point(926, 288);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
-            this.btnPesquisar.TabIndex = 15;
+            this.btnPesquisar.TabIndex = 25;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
@@ -270,7 +270,7 @@
             this.txtPesquisa.Location = new System.Drawing.Point(666, 291);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(254, 20);
-            this.txtPesquisa.TabIndex = 14;
+            this.txtPesquisa.TabIndex = 26;
             // 
             // lblPesquisa
             // 
@@ -278,7 +278,7 @@
             this.lblPesquisa.Location = new System.Drawing.Point(568, 294);
             this.lblPesquisa.Name = "lblPesquisa";
             this.lblPesquisa.Size = new System.Drawing.Size(91, 13);
-            this.lblPesquisa.TabIndex = 0;
+            this.lblPesquisa.TabIndex = 27;
             this.lblPesquisa.Text = "Pesquise o aluno:";
             // 
             // lblID
@@ -287,7 +287,7 @@
             this.lblID.Location = new System.Drawing.Point(28, 412);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(21, 13);
-            this.lblID.TabIndex = 0;
+            this.lblID.TabIndex = 28;
             this.lblID.Text = "ID:";
             // 
             // txtId
@@ -296,7 +296,7 @@
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(108, 20);
-            this.txtId.TabIndex = 16;
+            this.txtId.TabIndex = 29;
             // 
             // cboTurma
             // 
@@ -304,19 +304,19 @@
             this.cboTurma.Location = new System.Drawing.Point(142, 139);
             this.cboTurma.Name = "cboTurma";
             this.cboTurma.Size = new System.Drawing.Size(121, 21);
-            this.cboTurma.TabIndex = 3;
+            this.cboTurma.TabIndex = 30;
             // 
             // btnEmprestimo
             // 
             this.btnEmprestimo.Location = new System.Drawing.Point(926, 412);
             this.btnEmprestimo.Name = "btnEmprestimo";
             this.btnEmprestimo.Size = new System.Drawing.Size(82, 49);
-            this.btnEmprestimo.TabIndex = 13;
+            this.btnEmprestimo.TabIndex = 31;
             this.btnEmprestimo.Text = "Pegar um Livro";
             this.btnEmprestimo.UseVisualStyleBackColor = true;
             this.btnEmprestimo.Click += new System.EventHandler(this.btnEmprestimo_Click);
             // 
-            // Aluno
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -351,7 +351,7 @@
             this.Controls.Add(this.lblDtNasc);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblTitle);
-            this.Name = "Aluno";
+            this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudantes)).EndInit();

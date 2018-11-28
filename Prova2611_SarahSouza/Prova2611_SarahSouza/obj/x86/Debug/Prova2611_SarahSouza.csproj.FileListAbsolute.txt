@@ -20,3 +20,12 @@ C:\Users\Aluno\Documents\Prova2611_SarahSouza\Prova2611_SarahSouza\obj\x86\Debug
 C:\Users\Aluno\Documents\Prova2611_SarahSouza\Prova2611_SarahSouza\obj\x86\Debug\Prova2611_SarahSouza.Aluno.resources
 C:\Users\Aluno\Documents\Prova2611_SarahSouza\Prova2611_SarahSouza\obj\x86\Debug\Prova2611_SarahSouza.Properties.Resources.resources
 C:\Users\Aluno\Documents\Prova2611_SarahSouza\Prova2611_SarahSouza\obj\x86\Debug\Prova2611_SarahSouza.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\Prova2611_SarahSouza\Prova2611_SarahSouza\obj\x86\Debug\Prova2611_SarahSouza.exe
+C:\Users\Aluno\Desktop\Prova2611_SarahSouza\Prova2611_SarahSouza\obj\x86\Debug\Prova2611_SarahSouza.pdb
+C:\Users\Aluno\Desktop\Prova2611_SarahSouza\Prova2611_SarahSouza\bin\Debug\Prova2611_SarahSouza.exe
+C:\Users\Aluno\Desktop\Prova2611_SarahSouza\Prova2611_SarahSouza\bin\Debug\Prova2611_SarahSouza.pdb
+C:\Users\Aluno\Desktop\Prova2611_SarahSouza\Prova2611_SarahSouza\obj\x86\Debug\Prova2611_SarahSouza.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Prova2611_SarahSouza\Prova2611_SarahSouza\obj\x86\Debug\Prova2611_SarahSouza.Emprestimo.resources
+C:\Users\Aluno\Desktop\Prova2611_SarahSouza\Prova2611_SarahSouza\obj\x86\Debug\Prova2611_SarahSouza.Aluno.resources
+C:\Users\Aluno\Desktop\Prova2611_SarahSouza\Prova2611_SarahSouza\obj\x86\Debug\Prova2611_SarahSouza.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Prova2611_SarahSouza\Prova2611_SarahSouza\obj\x86\Debug\Prova2611_SarahSouza.csproj.GenerateResource.Cache
